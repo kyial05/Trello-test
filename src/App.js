@@ -4,8 +4,7 @@ import "./App.css";
 export const App = () => {
   return (
     <div className="App">
-      new
-      <h1>hello world</h1>
+      <h1>Hello World!</h1>
     </div>
   );
 };
