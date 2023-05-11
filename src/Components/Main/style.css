@@ -1,9 +1,7 @@
 
   .content {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  
+    flex-wrap: wrap;
     border: 3px solid gray;
     
   }
@@ -29,4 +27,6 @@
     align-items: center;
     justify-content: center;
   }
+  
+  
   

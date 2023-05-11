@@ -6,11 +6,13 @@ export const Dat = [
       img: first,
       price: "$2.99",
       des: "Apple Juice",
+      vol:"250ml"
     },
     {
       id: 2,
       img: second,
       price: "$3.19",
       des: "Grapes juice",
+      volume:"250ml"
     }
   ];

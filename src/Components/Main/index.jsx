@@ -22,13 +22,17 @@ export const Juice = ({ el }) => {
     <div className="content">
       <img src={el.img} alt="img" />
       <h1>{el.des}</h1>
+      <h3>{el.vol}</h3>
       <h2>price: {el.price} $</h2>
+      
       <div className="pricePlace">
         <button onClick={Plus}>+</button>
         <h2 className="counter">{count}</h2>
         <button onClick={Minus}>-</button>
+        <button className="Save"> Save for later</button>
+      <button className="Remove">Remove</button>
       </div>
-      <h2>sum: {result} $</h2>
+      
     </div>
   );
 };
