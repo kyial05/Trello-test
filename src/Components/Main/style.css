@@ -2,43 +2,70 @@
   .content {
     display: flex;
     flex-wrap: nowrap;
-    border: 3px solid gray;
-    width: 900px;
-    
-  }
-  .Name{
-
+    width: 900px;  
   }
   .content img {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
+  } 
+   .Card{
+    width: 700px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
   }
+  .Name img{
+    width: 30px;
+    height: 30px;
+  }
+  .Name {
+    line-height: 10px;
+  }
+  
   .pricePlace {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100px;
+    flex-direction: column;
+    
+    
   }
   .pricePlace button {
     width: 30px;
     height: 30px;
     font-size: 25px;
     margin-top: 10px;
+  }  
+  .Counter{
+    width: 150px;
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 60px;
   }
-  .counter{
+  .Counter button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+  }
+  .count{
     width: 20px;
     height: 20px;
+    font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .Card{
-    width: 600px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+  .Save{
+    color: rgb(0, 132, 255);
   }
+
+  .Remove{
+    color: coral;
+  }
+  
+
 
   
   

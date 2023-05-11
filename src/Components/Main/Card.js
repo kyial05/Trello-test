@@ -1,18 +1,21 @@
-import first from "../Img/fruice-apple-juice-12x330ml-800x800.jpg";
-import second from "../Img/81iHfeMUYNL.jpg";
+import first from "../Img/Photo.jpg";
+import second from "../Img//Photo2.jpg";
+import Icon from "../Img/Photo3.png"
 export const Dat = [
     {
       id: 1,
       img: first,
       price: "$2.99",
       des: "Apple Juice",
-      vol:"250ml"
+      vol:"250ml",
+      icon:Icon
     },
     {
       id: 2,
       img: second,
       price: "$3.19",
       des: "Grapes juice",
-      volume:"250ml"
+      vol:"250ml",
+      icon:Icon
     }
   ];
