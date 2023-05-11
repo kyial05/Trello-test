@@ -1,32 +1,29 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 
-  .content {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  
-    border: 3px solid gray;
-    
-  }
-  .content img {
-    width: 300px;
-    height: 300px;
-  }
-  .pricePlace {
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-  }
-  .pricePlace button {
-    width: 30px;
-    height: 30px;
-    font-size: 25px;
-    margin-top: 10px;
-  }
-  .counter{
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  border: 3px solid gray;
+}
+.content img {
+  width: 300px;
+  height: 300px;
+}
+.pricePlace {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+.pricePlace button {
+  width: 30px;
+  height: 30px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.counter {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,20 +1,23 @@
 import React, { useState } from "react";
-
+// import { Dat } from "./Card";
 import "./style.css";
 
 export const Juice = ({ el }) => {
   const [result, setResult] = useState(el.price);
   const [count, setCount] = useState(1);
+  const [summ, setSumm] = useState();
 
   const Plus = () => {
     setResult(el.price * (count + 1));
     setCount(parseInt(count) + 1);
+    setSumm();
   };
 
   const Minus = () => {
     if (count > 0) {
       setResult(el.price * (count - 1));
       setCount(parseInt(count) - 1);
+      setSumm();
     }
   };
 
@@ -29,6 +32,8 @@ export const Juice = ({ el }) => {
         <button onClick={Minus}>-</button>
       </div>
       <h2>sum: {result} $</h2>
+      <h1>general: {summ}</h1>
     </div>
   );
 };
+
