@@ -1,9 +1,13 @@
 
   .content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     border: 3px solid gray;
+    width: 900px;
     
+  }
+  .Name{
+
   }
   .content img {
     width: 300px;
@@ -12,6 +16,7 @@
   .pricePlace {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100px;
   }
   .pricePlace button {
@@ -27,6 +32,13 @@
     align-items: center;
     justify-content: center;
   }
-  
+  .Card{
+    width: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   
   
