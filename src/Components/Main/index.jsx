@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import { Dat } from "./Card";
 import "./style.css";
 
 export const Juice = ({ el }) => {
@@ -17,23 +16,31 @@ export const Juice = ({ el }) => {
     if (count > 0) {
       setResult(el.price * (count - 1));
       setCount(parseInt(count) - 1);
-      setSumm();
     }
   };
 
   return (
     <div className="content">
       <img src={el.img} alt="img" />
-      <h1>{el.des}</h1>
-      <h2>price: {el.price} $</h2>
-      <div className="pricePlace">
+      <div className="desPart">
+        <p className="des">{el.des}</p>
+        <p className="vol">{el.vol}</p>
+        <img src={el.mark} alt="mark" className="mark"/>
+      </div>
+      <div className="countPart">
         <button onClick={Plus}>+</button>
-        <h2 className="counter">{count}</h2>
+        <p className="counter">{count}</p>
         <button onClick={Minus}>-</button>
       </div>
-      <h2>sum: {result} $</h2>
-      <h1>general: {summ}</h1>
+      <div className="pricePart">
+        <p className="price">$  {el.price}</p>
+        <button className="save">Save for later</button>
+        <button className="remove">Remove</button>
+      </div>
+      {/* <div className="sumPart">
+        <p>sum: {result} $</p>
+        <p>general: {summ}</p>
+      </div> */}
     </div>
   );
 };
-

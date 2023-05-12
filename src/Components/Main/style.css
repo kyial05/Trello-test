@@ -1,29 +1,83 @@
 .content {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-
-  border: 3px solid gray;
+  margin-top: 20px;
+  border-bottom: 1px solig gray;
+  padding: 30px 30px 30px 30px;
+  grid-column-gap: 50px;
 }
 .content img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
-.pricePlace {
+.desPart {
   display: flex;
-  justify-content: space-between;
-  width: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-.pricePlace button {
-  width: 30px;
-  height: 30px;
-  font-size: 25px;
-  margin-top: 10px;
+.vol {
+  margin-top: 0;
+  color: rgb(71, 68, 68);
 }
-.counter {
-  width: 20px;
-  height: 20px;
+.desPart img{
+  display: flex;
+  width: 25px;
+  height: 25px;
+}
+.des {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.price {
+  
+  font-size: 20px;
+}
+.countPart {
   display: flex;
   align-items: center;
-  justify-content: center;
+  grid-column-gap: 15px;
+}
+.countPart button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: rgb(160, 158, 158);
+}
+.counter {
+  font-size: 20px;
+}
+.pricePart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 30px;
+}
+.price {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.save {
+  margin-top: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+  text-decoration: underline;
+  color: rgb(61, 115, 231);
+  cursor: pointer;
+  height: 30px;
+  margin-bottom: 0;
+}
+.remove {
+  margin-top: 0;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 20px;
+  text-decoration: underline;
+  color: red;
+  cursor: pointer;
+  height: 30px;
 }
