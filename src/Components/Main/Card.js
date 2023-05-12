@@ -1,5 +1,6 @@
-import first from "../Img/fruice-apple-juice-12x330ml-800x800.jpg";
-import second from "../Img/81iHfeMUYNL.jpg";
+import first from "../Img/Photo.jpg";
+import second from "../Img/Photo2.jpg";
+
 export const Dat = [
   {
     id: 1,
