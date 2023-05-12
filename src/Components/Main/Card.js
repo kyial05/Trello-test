@@ -4,13 +4,13 @@ export const Dat = [
   {
     id: 1,
     img: first,
-    price: 2.99,
+    price: 3,
     des: "Apple Juice",
   },
   {
     id: 2,
     img: second,
-    price: 3.19,
+    price: 4,
     des: "Grapes juice",
   },
 ];

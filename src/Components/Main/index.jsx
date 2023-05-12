@@ -24,8 +24,6 @@ export const Juice = ({ el }) => {
   return (
     <div className="content">
       <img src={el.img} alt="img" />
-      <div className="Card">
-      <div className="Name">
       <h1>{el.des}</h1>
       <h2>price: {el.price} $</h2>
       <div className="pricePlace">
