@@ -1,14 +1,53 @@
 .App{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(154, 200, 221);
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
-.Container{
+.header{
+    width: 900px; 
+    height: 550px;  
+    background-color: #ffff;
+    border-radius: 20px;
     flex-direction: column;
-    flex-wrap: wrap;
    display: flex;
    align-items: center;
-   width: 100%;
-   height: 100%;
- 
+   justify-content: center;
+}
+.Container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Container h2{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.Container a{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+hr{
+    width: 700px;
+    margin-right: 20px;
+}
+.Sum{
+    display: flex;
+    margin-right: -600px;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.Sum button{
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgb(129, 186, 240);
+    border:rgb(129, 186, 240); ;
+}
+.Sum h1{
+    font-size: 40px;
+    margin-left: 25px;
 }
