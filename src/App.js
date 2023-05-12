@@ -25,7 +25,7 @@ export const App = ({ el }) => {
       <div className="Container">
         <div className="headPart">
           <p>Shopping chart</p>
-          <button>Remove all</button>
+          <button >Remove all</button>
         </div>
         {Dat.map((el, id) => {
           return <Juice el={el} id={id} />;
@@ -34,11 +34,11 @@ export const App = ({ el }) => {
           <div className="orderTop">
             <div className="orderLeft">
               <p>Sub-Total</p>
-              <span onChange={Plus}>{count} items</span>
+              <span onChange={Plus}>{countG} items</span>
             </div>
-            <p className="generalPrice">$ </p>
+            <p className="generalPrice">$ {summ}</p>
           </div>
-          <buttom className="checkout">Checkout</buttom>
+          <buttom className="checkout" >Checkout</buttom>
         </div>
       </div>
     </div>

@@ -37,10 +37,10 @@ export const Juice = ({ el }) => {
         <button className="save">Save for later</button>
         <button className="remove">Remove</button>
       </div>
-      {/* <div className="sumPart">
+      <div className="sumPart">
         <p>sum: {result} $</p>
         <p>general: {summ}</p>
-      </div> */}
+      </div>
     </div>
   );
 };
