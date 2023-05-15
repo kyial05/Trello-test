@@ -1,7 +1,18 @@
 import React, { useState } from "react";
 import "./style.css";
+import { useCart } from "react-use-cart";
 
 export const Juice = ({ el }) => {
+  const {
+    isEmpty,
+    totalUniqueItems,
+    items,
+    totalItems,
+    cartTotal,
+    updateItemQuantity,
+    removeItem,
+    emptyCart,
+  } = useCart();
   const [result, setResult] = useState(el.price);
   const [count, setCount] = useState(1);
   const [summ, setSumm] = useState();
@@ -25,7 +36,7 @@ export const Juice = ({ el }) => {
       <div className="desPart">
         <p className="des">{el.des}</p>
         <p className="vol">{el.vol}</p>
-        <img src={el.mark} alt="mark" className="mark"/>
+        <img src={el.mark} alt="mark" className="mark" />
       </div>
       <div className="countPart">
         <button onClick={Plus}>+</button>
@@ -33,9 +44,11 @@ export const Juice = ({ el }) => {
         <button onClick={Minus}>-</button>
       </div>
       <div className="pricePart">
-        <p className="price">$  {el.price}</p>
+        <p className="price">$ {el.price}</p>
         <button className="save">Save for later</button>
-        <button className="remove">Remove</button>
+        <button className="remove">
+          Remove
+        </button>
       </div>
       <div className="sumPart">
         <p>sum: {result} $</p>
