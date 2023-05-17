@@ -37,7 +37,13 @@ export const App = ({ el }) => {
       <div className="Container">
         <div className="headPart">
           <p>Shopping chart</p>
-          <button>Remove all</button>
+          <button
+            onClick={(e) => {
+              e.currentTarget.parentNode.parentNode.lastChild.remove();
+            }}
+          >
+            Remove all
+          </button>
         </div>
         {Dat.map((el, id) => {
           return <Juice el={el} id={id} />;

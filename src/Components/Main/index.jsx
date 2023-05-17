@@ -46,7 +46,12 @@ export const Juice = ({ el }) => {
       <div className="pricePart">
         <p className="price">$ {el.price}</p>
         <button className="save">Save for later</button>
-        <button className="remove">
+        <button
+          className="remove"
+          onClick={(e) => {
+            e.currentTarget.parentNode.parentNode.remove();
+          }}
+        >
           Remove
         </button>
       </div>
