@@ -2,27 +2,27 @@ import React, { useState } from "react";
 import "./App.css";
 import { Juice } from "./Components/Main";
 import { Dat } from "./Components/Main/Card";
-import { useCart } from "react-use-cart";
+// import { useCart } from "react-use-cart";
 
 export const App = ({ el }) => {
-  const {
-    isEmpty,
-    totalUniqueItems,
-    items,
-    totalItems,
-    cartTotal,
-    updateItemQuantity,
-    removeItem,
-    emptyCart,
-  } = useCart();
+  // const {
+  //   isEmpty,
+  //   totalUniqueItems,
+  //   items,
+  //   totalItems,
+  //   cartTotal,
+  //   updateItemQuantity,
+  //   removeItem,
+  //   emptyCart,
+  // } = useCart();
   const [result, setResult] = useState();
   const [count, setCount] = useState(1);
-  const [summ, setSumm] = useState(0);
+  const [summ, setSumm] = useState();
 
   const Plus = () => {
     setResult(el.price * (count + 1));
     setCount(parseInt(count) + 1);
-    setSumm();
+    // setSumm();
   };
 
   const Minus = () => {
@@ -31,6 +31,7 @@ export const App = ({ el }) => {
       setCount(parseInt(count) - 1);
     }
   };
+
   return (
     <div className="App">
       <div className="Container">
@@ -45,11 +46,13 @@ export const App = ({ el }) => {
           <div className="orderTop">
             <div className="orderLeft">
               <p>Sub-Total</p>
-              <span onChange={Plus}>{count} items</span>
+              <span>{count} items</span>
             </div>
             <p className="generalPrice">$ {summ}</p>
           </div>
-          <buttom className="checkout">Checkout</buttom>
+          <button className="checkout" onClick={() => alert("order accepted")}>
+            Checkout
+          </button>
         </div>
       </div>
     </div>

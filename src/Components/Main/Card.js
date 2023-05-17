@@ -1,6 +1,7 @@
 import first from "../Img/Photo.jpg";
 import second from "../Img/Photo2.jpg";
-import round from "../Img/Photo3.png"
+import round from "../Img/Photo3.png";
+
 export const Dat = [
   {
     id: 1,
